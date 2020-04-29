@@ -1,14 +1,40 @@
 import 'bootstrap';
 import $ from "jquery";
+import Swiper from 'swiper'
 
-import imageURL from './assets/trollHuntersArcadia.png';
+
+
+
 
 // JQuery
 $(document).ready(() => {
 
     // bootstrap tooltips
     $(() => {
-        $('[data-toggle="tooltip"]').tooltip({ trigger: "hover" })
-    });
+              $('[data-toggle="tooltip"]').tooltip({ trigger: "hover" });
 
+
+              let pressThumbs = new Swiper(".press-thumbs", {
+                spaceBetween: 10,
+                slidesPerView: 5,
+
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+              })
+
+              let pressQuotes = new Swiper(".press-quotes", {
+                thumbs: {
+                    swiper: pressThumbs,
+                    slideThumbActiveClass: 'press-thumb-active'
+                  },
+                  effect: 'fade',
+                  fadeEffect: {
+                    crossFade: true
+                  },
+                autoplay: {
+                  delay: 3000,
+                },
+              });
+
+            });
 });
