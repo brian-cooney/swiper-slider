@@ -15,7 +15,13 @@ $(document).ready(() => {
         320: {
           slidesPerView: 1,
         },
-        640: {
+        768: {
+          slidesPerView: 3,
+        },
+        1000: {
+          slidesPerView: 4,
+        },
+        1200: {
           slidesPerView: 5,
         },
       },
@@ -34,5 +40,16 @@ $(document).ready(() => {
         delay: 3000,
       },
     });
+
+
+    $('.shopAccordion__wrapper').click(function () {
+      $(this).toggleClass('shopAccordion__rotate')
+      $(this)
+        .find('.shopAccordion__content')
+        .slideToggle('fast')
+      $('.shopAccordion__svg').toggleClass('shopAccordion__rotate')
+    })
+
+
   });
 });

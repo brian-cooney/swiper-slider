@@ -1,0 +1,50 @@
+
+.discover__pura {
+    background-color: $yellow;
+    margin-top: 60px;
+    &-content {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    & img {
+      width: 100%;
+    }
+  
+    &-content {
+      @include media-query($small) {
+        text-align: center;
+      }
+      @include media-query($medium) {
+        text-align: left;
+      }
+    }
+    &-image {
+        background-image: url("../assets/packs.png");
+        height: 560px; 
+        background-position: right; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+    }
+    &-flex {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+    &-title {
+      font-weight: 600;
+      font-size: 30px;
+    }
+    &-btn {
+      padding: 10px 55px;
+    }
+  }
+  
+  .uppercase-heading {
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  
+  

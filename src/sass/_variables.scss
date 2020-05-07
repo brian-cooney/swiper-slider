@@ -26,3 +26,261 @@ $screen-xlg-max: 2560px;
 $black: #0d0d0d;
 $white: #f5f1e9;
 $pink: #0c101a;
+
+
+$neutral: #f9f9f9;
+$blue: #5aaabd;
+$blue-pale: #e3f7fc;
+$primary-navy: #302f4f;
+$light-navy: rgba(255, 255, 255, 0.1);
+$mint-accent: #aad6c6;
+$white: #fff;
+$light-blue: #a5d3ed;
+$yellow: #fff188;
+$orange: #ff9e7d;
+$outline: #e8e8e8;
+
+$theme-colors: (
+  "blue": $blue,
+  "yellow": $yellow,
+  // "secondary": $secondary,
+    // "success": $success,
+    // "info": $info,
+    // "warning": $warning,
+    // "danger": $danger,
+    // "light": $light,
+    // "dark": $dark,,,,,,,,,,,,
+);
+
+$btn-border-radius: 3px;
+
+// $spacer: 1rem;
+// $spacers:  (
+//   0: 0,
+//   1: (
+//     $spacer * 0.5,
+//   ),
+//   2: (
+//     $spacer
+//   ),
+//   3: (
+//     $spacer * 1.5,
+//   ),
+//   4: (
+//     $spacer * 2,
+//   ),
+//   5: (
+//     $spacer * 2.5,
+//   ),
+//   6: (
+//     $spacer * 3,
+//   ),
+// ),
+
+/*================ VARIABLES ================*/
+/*============================================================================
+  Grid Breakpoints and Class Names
+    - Do not change the variable names
+    - Breakpoint pixel values are used in the window.theme.breakpoints object
+    - These values are hard-copied within `search.js` and must be kept in sync!
+==============================================================================*/
+$grid-medium: 750px;
+$grid-large: 990px;
+$grid-widescreen: 1400px;
+$grid-gutter: 30px;
+$grid-gutter-mobile: 22px;
+
+$small: "small";
+$medium: "medium";
+$medium-down: "medium-down";
+$medium-up: "medium-up";
+$large: "large";
+$large-down: "large-down";
+$large-up: "large-up";
+$widescreen: "widescreen";
+
+/*============================================================================
+  Generate breakpoint-specific column widths and push classes
+    - Default column widths: $grid-breakpoint-has-widths: ($small, $medium-up);
+    - Default is no push classes
+==============================================================================*/
+$grid-breakpoint-has-widths: ($small, $medium-up);
+$grid-breakpoint-has-push: ($small, $medium-up);
+
+/*================ Color Variables ================*/
+
+// Text colors
+$color-text: #3a3a3a;
+$color-text-shadow: rgba(0, 0, 0, 0.4);
+$color-body-text: $primary-navy;
+$color-sale-text: #fa4545;
+$color-small-button-text-border: #3a3a3a;
+$color-text-field: rgba(0, 0, 0, 0);
+$color-text-field-text: #000000;
+$color-navigation-text: #3a3a3a;
+
+// Button colors
+$color-btn-primary: $blue;
+$color-btn-primary-text: #ffffff;
+
+// Hover and focus states
+$color-text-focus: adaptiveColor(#3a3a3a, #3a3a3a);
+$color-overlay-text-focus: adaptiveColor(#ffffff, #ffffff);
+$color-btn-primary-focus: adaptiveColor(#3a3a3a, #3a3a3a);
+$color-btn-social-focus: adaptiveColor(#ebebeb, #ebebeb);
+$color-small-button-text-border-focus: adaptiveColor(#3a3a3a, #3a3a3a);
+$predictive-search-focus: adaptiveBackgroundColor(#ffffff, #ffffff);
+
+// Link buttons and secondary cta
+$color-link: $color-body-text;
+$opacity-link-hover: 0.6;
+
+// Transitions
+$transition-duration-fast: 100ms;
+$transition-duration: 250ms;
+$transition-duration-slow: 400ms;
+$transition-link-hover: $transition-duration-fast
+  cubic-bezier(0.44, 0.13, 0.48, 0.87);
+
+// Backgrounds
+$color-body: #ffffff;
+$color-bg: #ffffff;
+$color-drawer-background: rgba(0, 0, 0, 0.6);
+$color-bg-alt: #333232;
+
+// Overlays
+$color-overlay-title-text: #ffffff;
+$color-image-overlay: #685858;
+$opacity-image-overlay: 0.4;
+
+$hover-overlay-opacity: 0.8;
+
+// Border colors
+$color-border: #ebebeb;
+$color-border-form: #cccccc;
+
+// Helper colors for form error states
+$color-disabled: #f4f4f4;
+$color-disabled-border: #f4f4f4;
+$color-error: #d20000;
+$color-error-message-list: #651818;
+$color-error-bg: #fff8f8;
+$color-success: #1f873d;
+$color-success-bg: #f8fff9;
+
+// Forms
+$color-form-text: #333;
+$color-error-input-text: $color-error;
+$input-padding-top-bottom: 10px;
+$input-padding-left-right: 18px;
+$input-padding-top-bottom-small: 8px;
+$input-padding-left-right-small: 15px;
+$input-group-height: 46px;
+$input-group-height-small: 42px;
+$input-border-width: 1px;
+
+// Social icons
+$color-facebook: #3b5998;
+$color-twitter: #00aced;
+$color-pinterest: #cb2027;
+
+/*================ Sizing Variables ================*/
+$width-site: 1200px;
+$gutter-site: 55px;
+$gutter-site-mobile: 22px;
+$section-spacing: 60px;
+$section-spacing-small: 35px;
+$border-radius: 2px;
+$icon-size: 20px;
+$connected-submit-size: $icon-size * 2.5;
+
+/*================ Footer Variables ================*/
+$footer-spacing-extra-small: 5px;
+$footer-spacing-small: 15px;
+$footer-wrapper-spacing: 18px;
+$footer-hr-bottom-spacing: 20px;
+$footer-spacing-medium: 25px;
+$footer-spacing-large: 60px;
+
+/*================ Z-Index ================*/
+$z-index-base: 1;
+$z-index-dropdown: 7;
+$z-index-sub-nav: 8;
+$z-index-drawer: 9;
+$z-index-announcement-bar: 10;
+$z-index-mobile-nav: 11;
+$z-index-search-bar: 999;
+$z-index-predictive-search-wrapper: 1000;
+$z-index-skip-to-content: 10000; // really high to be safe of app markup
+
+/*================ SVG ================*/
+$svg-select-icon: "";
+
+/*================ Drawers ================*/
+$transition-drawer: all $transition-duration-slow
+  cubic-bezier(0.29, 0.63, 0.44, 1);
+
+/*================ Hero Slider ================*/
+$color-slideshow-arrows: #000;
+$color-slideshow-dots: #fff;
+
+/*================ Typography ================*/
+
+// helvetica_n7
+// helvetica_n4
+// helvetica_n4
+// helvetica_n4
+// helvetica_n4
+// helvetica_n4
+
+$font-weight-body--bold: 700;
+$font-weight-body--bolder: 700;
+
+$font-stack-header: "Work Sans";
+$font-style-header: "normal";
+$font-weight-header: "600";
+
+$font-stack-body: "Work Sans";
+$font-style-body: "normal";
+$font-weight-body: "500";
+
+$font-size-header: 26 * 1px;
+
+$shopify-font-size-base: 15px; // Henceforth known as 1em
+
+$font-stack-cart-notification: "Work Sans", "Helvetica Neue", Helvetica, Arial,
+  sans-serif;
+
+$font-size-mobile-input: 16px; // min 16px to prevent zooming
+
+/*================ Gift Cards ================*/
+$color-giftcard-tooltip-fallback: #333;
+$color-giftcard-light: #fff;
+$color-giftcard-tooltip: rgba(0, 0, 0, 0.9);
+$color-giftcard-disabled: #999;
+$color-giftcard-small-text: #b3b3b3;
+$color-giftcard-shadow: rgba(0, 0, 0, 0.1);
+$color-giftcard-print-bg: #fff;
+$color-giftcard-print: #000;
+$color-giftcard-bg: #e95e61;
+
+/*================ Z-index ================*/
+$z-index-giftcard-image: 2;
+$z-index-giftcard-corners: 3;
+$z-index-giftcard-tooltip: 4;
+$z-index-giftcard-code: 5;
+
+/*================ Product video ================*/
+$color-video-bg: #ffffff;
+
+
+$shopify-grid-breakpoints: (
+  $small "(max-width: #{$grid-medium - 1})",
+  $medium "(min-width: #{$grid-medium}) and (max-width: #{$grid-large - 1})",
+  $medium-down "(max-width: #{$grid-large - 1})",
+  $medium-up "(min-width: #{$grid-medium})",
+  $large "(min-width: #{$grid-large}) and (max-width: #{$grid-widescreen - 1})",
+  $large-down "(max-width: #{$grid-widescreen - 1})",
+  $large-up "(min-width: #{$grid-large})",
+  $widescreen "(min-width: #{$grid-widescreen})"
+);

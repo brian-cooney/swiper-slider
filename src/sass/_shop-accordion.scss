@@ -1,0 +1,42 @@
+.shopAccordion {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    background: white;
+    color: black;
+    &__wrapper {
+        border-bottom: 1px solid #E8E8E8;
+    }
+    &__card {
+      cursor: pointer;
+      display: flex;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__svg {
+      background: url(../assets/chevron.svg) no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: 20px;
+      width: 20px;
+    }
+  
+    &__rotate {
+      & .shopAccordion__svg {
+        // animation-name: spin;
+        // animation-duration: 1000ms;
+        // // animation-iteration-count: infinite;
+        // animation-timing-function: linear;
+        transform: rotate(180deg);
+      }
+    }
+  
+    &__content {
+      padding-top: 0rem;
+      padding-bottom: 2rem;
+      padding-right: 2rem;
+      font-size: 18px;
+      display: none;
+    }
+  }

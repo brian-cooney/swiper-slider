@@ -1,7 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
 
-@import "fonts";
+
 @import "variables";
+@import "mixins";
+@import "default";
+@import "fonts";
 @import "components";
 @import "reset";
 @import "press-quotes";
+@import "discover-pura";
+@import "shop-accordion";
