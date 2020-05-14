@@ -1,0 +1,19 @@
+.ourStoryQuote {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #FF9E7D;
+
+    &__wrapper {
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    &__source {
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
