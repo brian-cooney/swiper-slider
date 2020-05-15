@@ -45,6 +45,12 @@
         & ul {
             display: flex;
             justify-content: flex-end;
+            @include media-query($medium-up) {
+                justify-content: flex-start;
+              }
+            @include media-query($large-up) {
+                justify-content: flex-end;
+              }
 
             & li {
                 height: 30px;
@@ -77,11 +83,22 @@
           }
           &-social {
               text-align: right;
+              @include media-query($medium-up) {
+                text-align: left;
+                margin-top: 10px;
+              }
+              @include media-query($large-up) {
+                text-align: right;
+                margin-top: 0;
+              }
           }
     }
     &__lang {
         display: flex;
         justify-content: flex-end;
+        @include media-query($medium-up) {
+            justify-content: flex-start;
+          }
         &-dropdown {
             padding: 10px;
             background: rgba(255, 255, 255, 0.1);
