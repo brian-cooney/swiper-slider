@@ -57,8 +57,17 @@
                 width: 30px;
                 border-radius: 50px;
                 background-color: lightblue;
-                margin-right: 10px;
+                margin-left: 10px;
                 position: relative;
+                @include media-query($medium-up) {
+                    margin-left: 0;
+                    margin-right: 10px;
+                  }
+                @include media-query($large-up) {
+                    margin-left: 10px;
+                    margin-right: 0;
+                  }
+
                 & div {
                     position: absolute;
                     top: 2px;
@@ -70,7 +79,6 @@
                     background-position: center;
                 }
             }
-
         }
     }
     &__title {
